@@ -25,10 +25,21 @@ def gross_for_director(d)
 end
 
 def list_of_directors(source)
-  # Write this implementation
+  grand_row_total = 0
+  column_index = 0
+  while column_index < nds[row_index].length do
+    grand_row_total += list_of_directors(nds, row_index, column_index)
+    column_index += 1
+  end
+  grand_row_total
+ 
 end
 
 def total_gross(source)
+  
+  
+  
+  
   # Write this implementation
   #
   # Should use methods:
