@@ -36,7 +36,17 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
-  
+  def list_of_directors(nds)
+  grand_total = 0
+  row_index = 0
+  while row_index < nds.length do
+    grand_total += list_of_directors(nds, row_index)
+    row_index += 1
+  end
+  grand_total
+end
+ 
+p list_of_directors(vm) #=> 2,275,000
   
   
   
