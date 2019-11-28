@@ -30,6 +30,11 @@ def list_of_directors(source)
   while column_index < nds[row_index].length do
     grand_row_total += list_of_directors(nds, row_index, column_index)
     column_index += 1
+    
+    list_of_directors
+ \-> list_of_directors
+    \-> list_of_directors
+  
   end
   grand_row_total
  
